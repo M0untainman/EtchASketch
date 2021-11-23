@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <link rel="stylesheet" href="sketchstyle.css">
+</head>
+<body>
+    <div> 
+        <div id="sketchBorder">
+            <h1>Etch-A-Sketch</h1>
+            <div id="drawScreen" > </div>
+            <div class="bottomBorder">
+                <div id="screenBtn" class="borderBtn">
+                    <p>Screen Options</p>
+                </div>
+                <div id="scrnOpt" class="fadeOut menu">
+                    <br>
+                    <label for="size">Choose grid size</label>
+                    <input type="range" min="12" max="100" value="20" id="size">
+                    <br>
+                    <input type="button" value="Make new Grid" id="newBtn">
+                </div>
+                <div id="clrOpt" class="fadeOut menu">
+                    <br>
+                    <input type="button" value="RAINBOWS!!!" id="randomBtn"> 
+                    <hr>
+                    <div>
+                        <label for="colorPicker">Choose Color</label>
+                        <input type="color" name="colorPicker" id="colorPicker">
+                    </div>
+                    <br>
+                </div>
+                <div id="colorOptions" class="borderBtn">
+                    <p>Color Options</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketchapp.js"></script>
+</body>
+</html>

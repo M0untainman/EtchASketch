@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Rondo";
+    src: url("Fonts/rondo.ttf");
+}
+body{
+    background-color: #6068d871;
+}
+
+#sketchborder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    cursor: crosshair;
+}
+
+#drawScreen{
+    background-color: gray;
+    display: grid;
+    width: 500px;
+    height: 500px;
+    align-self: center;
+        
+}
+
+#sketchBorder{
+    background-color: rgb(236, 15, 14);
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 650px;
+    border-radius: 10%;
+    
+    
+}
+.bottomBorder{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.borderbtn{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: url("Images/dial.jpg");
+    background-size: 70px;
+    font-size: x-small;
+}
+.borderbtn:hover{
+    font-size: small;
+    transform: rotate(30deg);
+}
+.fadeIn{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 1000ms;
+}
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 1000ms;
+  }
+
+
+h1{
+    font-size: 2.8rem;
+    font-family: Rondo;
+    align-self: center;
+    color: gold;
+    text-shadow: 0px 0px 5px gold;
+	font-weight: 400;
+}
